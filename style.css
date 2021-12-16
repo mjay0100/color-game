@@ -21,6 +21,7 @@ h1{
 
 .container{
     display: flex;
+    margin: 0 auto;
     flex-wrap: wrap;
     max-width: 600px;
     margin: 20px auto;
@@ -69,3 +70,16 @@ button:hover {
     background-color: steelblue;
 }
 
+@media (max-width: 600px) {
+    .container{
+        width: 100%;
+    }
+    
+    #colorDisplay{
+        font-size: 110%;
+    }
+    .message{
+        width: 30%;
+        display: inline-block;
+    }
+}
